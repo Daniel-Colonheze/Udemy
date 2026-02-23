@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Daniel Colonheze - Currículo</title>
+    <style>
+        @media print {
+            body {
+                padding: 5px !important;
+                margin: 0 !important;
+                font-size: 11px;
+                -webkit-print-color-adjust: exact;
+            }
+            .content {
+                padding: 12px !important;
+                box-shadow: none !important;
+                border-radius: 0 !important;
+                margin: 0 !important;
+            }
+            h2 {
+                margin-top: 12px !important;
+                font-size: 14px !important;
+            }
+            .header {
+                padding-bottom: 10px !important;
+                margin-bottom: 12px !important;
+            }
+            .two-columns {
+                gap: 12px !important;
+            }
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 10px;
+            background-color: #f0f4f8;
+            color: #2d3748;
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 12px;
+            line-height: 1.4;
+        }
+        .header {
+            border-bottom: 2px solid #2c5282;
+            padding-bottom: 12px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        h1 {
+            color: #2c5282;
+            margin-bottom: 8px;
+            font-size: 22px;
+            margin-top: 0;
+            letter-spacing: -0.5px;
+        }
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            font-size: 11.5px;
+            color: #4a5568;
+            align-items: center;
+            justify-content: center;
+            margin-top: 6px;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            max-width: 100%;
+        }
+        .contact a {
+            text-decoration: none;
+            color: #4a5568 !important;
+            font-weight: 500;
+            word-break: break-all;
+            max-width: 280px;
+            display: inline-block;
+        }
+        .icon {
+            width: 13px;
+            height: 13px;
+            stroke: #2c5282;
+            stroke-width: 1.8;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            fill: none;
+            flex-shrink: 0;
+            min-width: 13px;
+        }
+        h2 {
+            color: #2d3748;
+            border-bottom: 1.5px solid #4299e1;
+            padding-bottom: 4px;
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+        .content {
+            background: white;
+            padding: 16px;
+            border-radius: 6px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.06);
+            margin: 0 auto;
+            border: 1px solid #e2e8f0;
+        }
+        .experience, .education, .skills, .languages, .technologies {
+            margin-bottom: 14px;
+        }
+        ul {
+            padding-left: 18px;
+            margin: 8px 0;
+        }
+        li {
+            margin-bottom: 5px;
+            font-size: 12px;
+            color: #4a5568;
+        }
+        .stack {
+            color: #4a5568;
+            margin-top: 8px;
+            font-size: 12px;
+            padding: 0;
+            border-left: none;
+            background: transparent;
+            font-weight: 500;
+        }
+        .section-icon {
+            width: 16px;
+            height: 16px;
+            stroke: #3182ce;
+            flex-shrink: 0;
+            stroke-width: 1.8;
+        }
+        p {
+            margin: 6px 0;
+            font-size: 12px;
+            line-height: 1.4;
+            color: #4a5568;
+        }
+        a {
+            color: #4a5568;
+            font-size: 12px;
+            font-weight: 500;
+            text-decoration: none;
+            word-break: break-all;
+        }
+        .two-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 5px;
+        }
+        .tech-list {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0 0;
+        }
+        .tech-list li {
+            margin-bottom: 6px;
+            padding-left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .tech-list li:last-child {
+            border-bottom: none;
+        }
+        .tech-list li:before {
+            content: "▸";
+            color: #3182ce;
+            font-weight: bold;
+            margin-right: 8px;
+            font-size: 11px;
+        }
+        .tech-name {
+            font-weight: 600;
+            color: #2d3748;
+            flex: 0 0 auto;
+        }
+        .tech-level {
+            color: #2d3748 !important;
+            font-size: 12px;
+            font-weight: 500;
+            margin-left: 8px;
+            flex: 0 0 auto;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        strong {
+            color: #2d3748;
+            font-weight: 600;
+        }
+        .stack strong {
+            color: #4a5568 !important;
+        }
+        .stack-item {
+            color: #4a5568 !important;
+            font-weight: 600;
+        }
+        .contact-links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            width: 100%;
+        }
+        .contact-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+            width: 100%;
+        }
+        .full-url {
+            font-size: 11px;
+            max-width: 320px;
+            overflow-wrap: break-word;
+            word-break: break-all;
+        }
+        .tech-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        .address-icon {
+            min-width: 13px;
+        }
+        .experience-summary {
+            font-size: 11.5px;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="header">
+            <h1>Daniel de Oliveira Colonheze</h1>
+            <div class="contact-links">
+                <div class="contact-row">
+                    <div class="contact-item">
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                        <span>danielcolonhze@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        <span>(18) 99757-4430</span>
+                    </div>
+                </div>
+                <div class="contact-row">
+                    <div class="contact-item">
+                        <svg class="icon address-icon" viewBox="0 0 24 24">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        <span>Rua Antônio Augusto de Oliveira, CEP: 86300000</span>
+                    </div>
+                </div>
+                <div class="contact-row">
+                    <div class="contact-item">
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                            <rect x="2" y="9" width="4" height="12"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                        <a href="https://www.linkedin.com/in/daniel-colonheze-81490332b/" target="_blank" class="full-url">LinkedIn: https://www.linkedin.com/in/daniel-colonheze-81490332b/</a>
+                    </div>
+                </div>
+                <div class="contact-row">
+                    <div class="contact-item">
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                        </svg>
+                        <a href="https://github.com/Daniel-Colonheze" target="_blank" class="full-url">GitHub: https://github.com/Daniel-Colonheze</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="two-columns">
+            <div>
+                <div class="experience">
+                    <h2>
+                        <svg class="section-icon" viewBox="0 0 24 24">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                        </svg>
+                        EXPERIÊNCIA
+                    </h2>
+                    <div class="experience-summary">
+                        <p><strong>Desenvolvimento do site da AETA</strong> (Associação de Estudantes de Tarumã). Sistema de gestão do transporte escolar municipal com visualização de linhas de ônibus, processamento de pagamentos via API AbacatePay, consulta de eventos e gerenciamento de usuários por parte do admin (podendo ele cirar eventos, documentos, pagamentos e adicionar, editar ou excluir um usuário).</p>
+                        <p>Fiquei responsável pelo frontend completo, integração com backend e interface profissional.</p>
+                        <p>O site conta com mais de 450 associados cadastrados.</p>
+                        <p>Atualmente estou realizando um curso para concretizar tudo isso que eu já sei e aprender mais sobre Node.js.</p>
+                        <p><strong>Link:</strong> <a href="https://aeta.com.br/">aeta.com.br</a></p>
+                    </div>
+                    <p class="stack"><strong>Stack:</strong> 
+                        <span class="stack-item">Backend: Laravel</span> | 
+                        <span class="stack-item">Frontend: Next.js</span> | 
+                        <span class="stack-item">Infra: Docker</span>
+                    </p>
+                </div>
+                
+                <div class="technologies">
+                    <h2>
+                        <svg class="section-icon" viewBox="0 0 24 24">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                        TECNOLOGIAS
+                    </h2>
+                    <ul class="tech-list">
+                        <li>
+                            <div class="tech-container">
+                                <span class="tech-name">HTML5</span>
+                                <span class="tech-level">Avançado</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tech-container">
+                                <span class="tech-name">CSS3</span>
+                                <span class="tech-level">Avançado</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tech-container">
+                                <span class="tech-name">JavaScript</span>
+                                <span class="tech-level">Intermediário</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tech-container">
+                                <span class="tech-name">TypeScript</span>
+                                <span class="tech-level">Intermediário</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tech-container">
+                                <span class="tech-name">React.js</span>
+                                <span class="tech-level">Intermediário</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tech-container">
+                                <span class="tech-name">Next.js</span>
+                                <span class="tech-level">Intermediário</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tech-container">
+                                <span class="tech-name">Docker</span>
+                                <span class="tech-level">Intermediário</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tech-container">
+                                <span class="tech-name">PostgreSQL</span>
+                                <span class="tech-level">Básico</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tech-container">
+                                <span class="tech-name">Git</span>
+                                <span class="tech-level">Básico</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tech-container">
+                                <span class="tech-name">Node.js</span>
+                                <span class="tech-level">Básico</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <div class="education">
+                    <h2>
+                        <svg class="section-icon" viewBox="0 0 24 24">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                            <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/>
+                        </svg>
+                        EDUCAÇÃO
+                    </h2>
+                    <p><strong>Engenharia de Software</strong><br>
+                    UTFPR (Universidade Tecnológica Federal do Paraná)</p>
+                    <p><strong>Período:</strong> Agosto/2025 – Agosto/2029
+                    <em>(Conclusão prevista)</em></p>
+                </div>
+
+                <div class="skills">
+                    <h2>
+                        <svg class="section-icon" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                        HABILIDADES
+                    </h2>
+                    <ul>
+                        <li>Comunicação e trabalho em equipe</li>
+                        <li>Resolução de problemas</li>
+                        <li>Aprendizado rápido</li>
+                    </ul>
+                </div>
+
+                <div class="languages">
+                    <h2>
+                        <svg class="section-icon" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="2" y1="12" x2="22" y2="12"/>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                        </svg>
+                        IDIOMAS
+                    </h2>
+                    <ul>
+                        <li><strong>Inglês</strong> — Intermediário (leitura/escrita/fala)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

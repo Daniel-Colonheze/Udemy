@@ -1,0 +1,33 @@
+*
+{
+    
+}
+
+#principal
+{
+    border: 2px solid rgb(0, 0, 0);
+    margin: 20px;
+    padding: 20px;
+}
+
+h1
+{
+    color: purple;
+}
+
+#ava
+{
+    color: black;
+}
+
+p
+{
+    color: rgb(173, 167, 167);
+}
+
+img
+{
+    width: 250px ;
+    border: 2px solid black;
+    
+}
