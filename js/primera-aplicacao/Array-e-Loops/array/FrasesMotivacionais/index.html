@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Javascript -->
+
+      <script>
+
+        function aleatorio(){
+          let min = 0;
+          let max = 5;
+          let numeroAleatorio = Math.floor(Math.random() * (max - min + 1)) + min;
+          const frases = ["Deus, ao criar o homem, superestimou a Sua capacidade", "O guerreiro de sucesso é um homem médio, mas com um foco apurado como um raio laser", "Se a sua vida for a melhor coisa que já te aconteceu, acredite, você tem mais sorte do que pode imaginar.", "O caminho para o sucesso e o caminho para o fracasso são quase exatamente os mesmos.", "Sucesso não consiste em nunca cometer erros, mas em nunca fazer o mesmo pela segunda vez", "Só é possível ensinar uma criança a amar, amando-a."]
+          document.getElementById("frase").innerHTML = frases[numeroAleatorio]
+        }
+
+      </script>
+    <title>Frases motivacionais</title>
+
+  </head>
+
+  <body>
+    
+    <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-12">
+
+            <div class="jumbotron">
+              <h1 class="text-success display-5">Frases motivacionais</h1>
+              <hr>
+
+              <h2 class="display-4"  id="frase">
+                Em busca do ótimo não se faz o bom.
+              </h2>
+
+              <hr>
+              <button type="button" class="btn btn-success btn-lg" onclick="aleatorio()">Nova frase</button>
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+  </body>
+
+</html>
