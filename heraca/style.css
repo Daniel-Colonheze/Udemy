@@ -1,0 +1,71 @@
+/* Reset básico - remove margens e paddings padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+    /* Fonte moderna e legível */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* Gradiente de fundo bonito (roxo para azul) */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+    /* Altura mínima de 100% da viewport */
+    min-height: 100vh;
+
+    /* Centraliza o conteúdo na tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo do título h1 */
+h1 {
+    /* Cor do texto branca */
+    color: #ffffff;
+
+    /* Tamanho grande da fonte */
+    font-size: 3.5rem;
+
+    /* Peso da fonte (negrito) */
+    font-weight: 700;
+
+    /* Sombra no texto para dar profundidade */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+    /* Espaçamento entre letras */
+    letter-spacing: 2px;
+
+    /* Transforma texto em maiúsculas */
+    text-transform: uppercase;
+
+    /* Animação suave ao carregar */
+    animation: fadeIn 1s ease-in;
+}
+
+/* Animação de entrada suave */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Efeito hover no título */
+h1:hover {
+    /* Aumenta levemente o tamanho */
+    transform: scale(1.05);
+
+    /* Transição suave */
+    transition: transform 0.3s ease;
+
+    /* Cursor de ponteiro */
+    cursor: pointer;
+}
