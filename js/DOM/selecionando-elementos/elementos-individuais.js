@@ -1,6 +1,6 @@
 
         // classe especifica usando selector e pelo Id
-/* const obj = document.getElementById('destaque') // pega pelo id
+ const obj1 = document.getElementById('destaque') // pega pelo id
 const obj2 = document.querySelector('li.primeiro') // pega uma classe especifica
 
 function executar(argumento){
@@ -31,6 +31,14 @@ lista.forEach(funcao)
  */
 
         // Pela classe
-
+/* 
 const obj = document.getElementsByClassName('vermelho') // pela classe, se tiver das com o mesmo nome voce pode usar array para acessar
 const obj = document.getElementsByName("nome") // usa em formularios, pega o nome do imput
+
+console.log(obj[0])
+
+ */
+
+ // selector all
+
+ const obj = document.querySelectorAll()
