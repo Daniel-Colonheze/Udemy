@@ -5,3 +5,5 @@ function executar(argumento){
     const obj2 = document.querySelector('li.primeiro')
     obj2.innerHTML = "teste"
 }
+
+const obj = document.getElementsByTagName()
