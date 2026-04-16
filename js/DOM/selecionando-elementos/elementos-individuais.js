@@ -6,11 +6,9 @@ const obj2 = document.querySelector('li.primeiro') // pega uma classe especifica
 function executar(argumento){
     const obj2 = document.querySelector('li.primeiro')
     obj2.innerHTML = "teste"
-<<<<<<< HEAD
 }
 
 const obj = document.getElementsByTagName()
-=======
     obj.classList.add("destaque");
 }
 
@@ -47,4 +45,3 @@ console.log(obj[0])
  // selector all
 
  const obj = document.querySelectorAll()
->>>>>>> 11e2866e6843b9c56a478238a23af009c5b4f249

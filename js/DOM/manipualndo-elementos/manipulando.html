@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Manipulando elementos</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+
+	<div id="conteudo">Conteudo</div>
+
+    <ul>
+        <li>Pedro</li>
+        <li>Fabio</li>
+    </ul>
+
+    <button onclick="adicionar()">Adicionar</button>
+    <button onclick="remover()">Remover</button>
+
+	<script type="text/javascript">
+
+        const obj = documents.getElementById('conteudo');
+        //obj.textContent = "Daniel"  // muda o conteudo da div, Literalmnente texto apenas
+        //obj.innerHTML = "<p style='color:blue'>Rafael</p>"  // configura como conteudo html entn vira um text
+                                           // entn e como usar html normal 
+        //const ul = document.getElementById('itens'
+        //const li = documento.createElement('li')
+        //li.textContent = "Fernando"
+        // const texto = document.createTextNode('junior')
+        // li.appendChild(texto)
+
+        function adicionar()
+        {
+            li.appendChild(texto)
+            ul.appendChild(li)
+        }
+
+        function remover (){
+            ul.removeChild(li)
+        }
+
+        </script>                              
+
+</body>
+</html>
